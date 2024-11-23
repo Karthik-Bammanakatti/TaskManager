@@ -1,0 +1,53 @@
+article {
+  padding: 1rem;
+  color: #25113d;
+  background-color: #bf9ee5;
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0;
+  overflow: hidden;
+}
+
+time {
+  color: #3c2c50;
+}
+
+.actions {
+  text-align: right;
+  margin: 0;
+}
+
+.actions button {
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #380774;
+  color: #decdf2;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #4a0774;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  margin: 5px;
+}
+
+.actions .edit {
+  background-color: rgba(5, 16, 240, 0.3);
+}
+
+.actions .edit:hover,
+.actions .edit:active {
+  background-color: rgba(8, 120, 248, 0.3);
+  box-shadow: 0 1px 6px rgba(43, 131, 232, 0.3);
+}
