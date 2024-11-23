@@ -1,14 +1,10 @@
 import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
+
 import { type Task } from '../../types/task-type';
-import { CardComponent } from '../../shared/card-component/card.component';
-import { DatePipe } from '@angular/common';
 import { TasksService } from '../tasks.servics';
-import { NewTaskData } from '../../types/add-task-type';
 
 @Component({
   selector: 'app-task',
-  standalone: true,
-  imports: [CardComponent, DatePipe],
   templateUrl: './task.component.html',
   styleUrl: './task.component.css',
 })

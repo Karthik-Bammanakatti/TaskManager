@@ -1,12 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { TasksService } from '../tasks.servics';
-import { Task } from '../../types/task-type';
+
+import { type Task } from '../../types/task-type';
 
 @Component({
   selector: 'app-edit-task',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './edit-task.component.html',
   styleUrl: './edit-task.component.css',
 })
