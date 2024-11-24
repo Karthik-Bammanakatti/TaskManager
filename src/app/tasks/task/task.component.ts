@@ -14,10 +14,10 @@ export class TaskComponent {
   @Output() edit = new EventEmitter<Task>();
 
   private taskService: TasksService = inject(TasksService);
+  audio = new Audio('assets/joke-drums-242242.mp3');
 
   onComplete() {
-    var audio = new Audio('assets/joke-drums-242242.mp3');
-    audio.play();
+    this.audio.play();
     this.taskService.deleteTaskById(this.task.id);
   }
 
